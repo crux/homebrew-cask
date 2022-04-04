@@ -9,6 +9,7 @@ cask "mark-text" do
   homepage "https://marktext.app/"
 
   app "MarkText.app"
+  binary "#{appdir}/MarkText.app/Contents/MacOS/MarkText", target: "mark-text"
 
   zap trash: [
     "~/Library/Application Support/marktext",
